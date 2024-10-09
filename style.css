@@ -1,0 +1,128 @@
+*, *:before, *:after {
+    margin:0;
+    padding:0;
+    overflow:none;
+    box-sizing:border-box;
+}
+
+body {
+    background: linear-gradient(90deg,#fffae2,#fbdea8,#ffb0b0);
+    display:flex;
+    justify-content:center;
+}
+
+#container {
+    width:50vw;
+    height:50vh;
+    margin:5rem 5vw 5rem 5vw;
+}
+
+#yourtask h6 {
+    font-family:"Source Code Pro", monospace;
+    font-weight:300;
+    font-size:5vw;
+    text-transform:uppercase;
+    line-height:0.65;
+    color:#c96868;
+    text-align:center;
+}
+
+#outline {
+    border:3px solid #c96868;
+    border-radius:75px;
+    width:100%;
+}
+
+#newtask {
+    margin:2rem;
+    position:relative;
+}
+
+#newtask input {
+    font-family:"Source Code Pro", monospace;
+    font-weight:400;
+    font-size:3vh;
+    padding:10px;
+    border-radius:50px;
+    border: 2px solid #fff;
+    margin:0;
+    width:100%;
+    height:7vh;
+    box-shadow:0 0 3px rgba(0,0,0,0.5);
+}
+
+#newtask input:focus {
+    outline:none;
+    box-shadow: 0 0 10px #c96868;
+}
+
+button {
+    width:10vh;
+    padding: 1.8vh;
+    cursor:pointer;
+    color:#fff;
+    border-radius:0 50px 50px 0;
+}
+
+#newtask button {
+    background-color: #c96868;
+    border:2px solid #fff;
+    position:absolute;
+    margin-left:-10vh;
+}
+
+#newtask button:hover {
+    background:linear-gradient(90deg,#fff,#fbdea8,#ffb0b0);
+    color:#c96868;
+    font-weight:700;
+}
+
+#tasks {
+    margin-top:1rem;
+}
+
+.task {
+    background-color: #fff;
+    margin: 1rem 3.5rem 1rem 3.5rem;
+    padding-left:2vh;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family:"Source Code Pro", monospace;
+    font-size: 3vh;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+
+.task button {
+    background: #da8359;
+    border:none;
+}
+
+.task button:hover {
+    color:#da8359;
+    background-color: #fff;
+}
+
+.completed {
+    text-decoration:line-through;
+    color: #0000005c;
+    background:#4f4f4f5c;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        width:75vh;
+    }  
+
+    #yourtask h6 {
+        font-weight:400;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #yourtask h6 {
+        font-size:10vw;
+    }
+}
